@@ -11,9 +11,13 @@
        <li>Food</li>
     </ul>
    ```
+
 - Click Run. See how the text got put into a nice list? ![Unordered list](images/UnorderedList.png)
+
 - The `<ul> </ul>` tags go around the whole list, and they turn it into the nice looking list you now have. "ul" stands for **unordered list**. This means a list with no numbers. Each thing in the list must be in between `<li> </li>` tags. "li" stands for **list item**. 
+
  Change the text in the list items to some pages that you would like to have in your website. Your website can be about anything you want, it doesn't have to be about your home country!
+
 - How about if you wanted a numbered list? It's almost the same, but instead of `ul`, you use `ol`, which stands for **ordered list**. Add the following code after the last `</p>` tag in the file:
    ```html
    <p>
@@ -26,6 +30,7 @@
       <li>Lists!</li>
    </ol>
    ```
+   
 - Click Run. Here's what it should look like now ![Ordered list](images/OrderedList.png)
 
 
