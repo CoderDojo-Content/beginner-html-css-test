@@ -2,7 +2,7 @@
 
 - In your Trinket, look at the tabs in the code panel and go to the file **styles.css** by clicking on the tab with that name.
 
-   * **CSS** is the code that describes what a website looks like.
+   **CSS** is the code that describes what a website looks like.
 
 - The file contains the following text:
 
@@ -13,7 +13,9 @@
    ```
 
 - The curly braces `{ }` and the text in between them is a set of **CSS rules**. The word `body` means that the rules are for all the `<body>` elements on your website. We call the bit outside the curly braces a **selector**. So in this case, it is the **selector** for the **body** elements.
+
 - Change the colour to `LightSkyBlue`, and click Run \(Remember, this is the button that says "Click To Run"\). Your website should now have a blue background!
+
 - What's going on? If you look at the top of the index.html file, you will see the following line:
     ```html
         <link type="text/css" rel="stylesheet" href="styles.css"/>
