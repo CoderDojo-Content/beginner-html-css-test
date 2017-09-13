@@ -3,9 +3,11 @@
 - Click on the image icon next to the **+** sign. This is where you can see the pictures that can be used on your website. For now you can use the picture included with the project. 
 
 - Go to the index.html file in the code panel. After the `</ul>` tag, type the following: 
-   ```html
-      <img src="tito.png" alt="Tito the dog" width="100px" />
-   ```
+
+    ```html
+    <img src="tito.png" alt="Tito the dog" width="100px" />
+    ```
+
    ![Picture of Tito](images/ImgTito2.png)
 
 - Notice that the `<img>` tag is different from the other tags you've used so far: 
@@ -16,7 +18,9 @@
 - What do you think the `width` attribute does? \(Hint: **px** is short for **pixels**, the teeny-tiny dots that make up your screen\) Try experimenting with different numbers! Don't delete the letters `px`. 
 
 - To add a picture of your own to the website, click on the image icon again, and click "Add Image". Click "Upload" and then select "Click To Select Files". Select the file on your computer that you want to upload and click "Open". Click "Done" when you are finished uploading files.
-![Upload files](images/UploadFilesWider.png)
+
+    ![Upload files](images/UploadFilesWider.png)
+
 - Once you have uploaded a picture you can add it to your website using the `<img>` tag as before. Change the value of the `src` attribute so that it exactly matches the name of the file with your picture. 
 
 - Change the value of the `alt` attribute to a short description of the picture. 

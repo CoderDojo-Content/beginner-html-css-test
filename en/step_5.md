@@ -23,7 +23,6 @@
     Change the text in the list items to some pages that you would like to have in your website. Your website can be about anything you want, it doesn't have to be about your home country!
 
 - How about if you wanted a numbered list? It's almost the same, but instead of `ul`, you use `ol`, which stands for **ordered list**. Add the following code after the last `</p>` tag in the file:
-
    ```html
    <p>
       These are the things I have learned to use in my website so far:
@@ -35,8 +34,6 @@
       <li>Lists!</li>
    </ol>
    ```
-
-
 - Click Run. Here's what it should look like now 
 
     ![Ordered list](images/OrderedList.png)
