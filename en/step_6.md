@@ -7,6 +7,7 @@
     <img src="tito.png" alt="Tito the dog" width="100px" />
     ```
     Here's what it should look like
+    
    ![Picture of Tito](images/ImgTito2.png)
 
 - Notice that the `<img>` tag is different from the other tags you've used so far: 
@@ -26,7 +27,7 @@
 
 --- /hints ---
 
-    Try experimenting with different numbers! Don't delete the letters `px`. 
+  Try experimenting with different numbers! Don't delete the letters `px`. 
 
 - To add a picture of your own to the website, click on the image icon again, and click "Add Image". Click "Upload" and then select "Click To Select Files". Select the file on your computer that you want to upload and click "Open". Click "Done" when you are finished uploading files.
 
