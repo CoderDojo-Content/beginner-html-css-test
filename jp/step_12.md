@@ -1,23 +1,23 @@
-## Adding a table
+## テーブルの追加
 
-- Sometimes it can be useful to show information in a table. For example if you want to list member information on a website for a local sports club or school. Or, in this example, songs!
+- 情報をテーブルで表示すると便利な場合があります。例えば、ウェブサイトに地域や学校ののスポーツクラブのメンバーの一覧を表示したい場合や、曲の一覧などです！
 
-- A table is a grid made up of **rows** and **columns**. Most tables also include titles at the top of each column, called the **header**.
+- テーブルは、**行\(rows\)**と**列\(columns\)**からなるマス目です。ほとんどのテーブルでは、**ヘッダー\(header\)**  と呼ばれるそれぞれの列のタイトルを持ちます。
 
-- Go to the file page\_with\_table.html. There you will see a bunch of code in between `<table> </table>` tags. Select all of the code from the start of the `<table>` tag to the end of the closing `</table>` tag and **copy** it.
+- `<table> </table>` タグの間にいろいろ入っているのを見ることができると思います。`<table>` タグから 、タグが終了する `</table>` を**コピー**します。
 
-- Go to one of your files where you would like to put a table and **paste** in the code.
+- テーブルを追加したい場所に、コードを**ペースト**してください。
 
-- Let's have a look at all those tags. It's a bit like the code for a list \(remember `<ul>` and `<ol>`?\) but with more levels.
+- すべてのタグについて確認していきます。このコードはリストに少し似ていますが、もっと多くの階層があります。\(`<ul>` や `<ol>` を思い出しましょう\)
 
-  Each pair of `<tr> </tr>` tags is a **row**. So everything in between them will be displayed on one line.
+  それぞれの `<tr></tr>`のペアは、**行**です。それらの間にあるものは、1行で表示されます。
 
-  The first row contains `<th> </th>` tags. These are used for the **headers**, so the column titles go in between them. There is one pair for each column you have in your table.
+  最初の行には `<th> </th>` タグがあります。これは、ヘッダー部分に利用されます。それぞれの列に対して、1つのペアを持ちます。
 
-  The `<td> </td>` tags stand for **table data**, and that's what goes in all the other rows. These are like the list item `<li> </li>` tags in a list: everything in between them is one item in your table row.
+  `<td> </td>` は**テーブルデータ**の略ですです。それは、行の中で利用されます。リスト中アイテムの `<li> </li>` タグのように、この間にあるものはテーブルの列のアイテムとして表示されます。
 
-- Here's an example of a table filled with information
-  ```html
+- 以下が情報が入っているテーブルの例です
+   ```html
     <table>
       <tr>
         <th>Artist</th>
@@ -40,38 +40,40 @@
         <td>1994</td>
       </tr>
     </table>
-  ```
+   ```
 
-- And here's what it looks like on the website 
-
+- そして、それはウェブサイト上で以下のように表示されます。 
   ![](images/TableResult2.png)
 
-- Try filling your table with anything you like! Simply put text in between the `<td> </td>` tags and also in between the `<th> </th>` tags. You can add more tags if you need to.
+- あなたの入れたい情報をテーブルに入れてみましょう。単純に `<td> </td>` タグと、`<th> </th>` タグに文章を入れてみましょう。もし必要であれば、タグを追加することもできます。
 
-- To add another **row**, you add another set of `<tr> </tr>` tags. In between them you put the same number of **data** items with `<td> </td>` tags as you have in the other rows.
+- **行**を追加するためには、`<tr> </tr>` タグを追加します。中には、**データ**アイテムを、`<td> </td>`タグを利用して、他と同じ数だけ入れます。
 
-- To add another **column** you add an extra **data** item with a set of `<td> </td>` tags onto every row. You also add an extra **header** item to the first row, using `<th> </th>` tags.
+- 追加で**列**を追加する場合は、`<td> </td>` タグを全ての行に追加します。また、最初の行に、`<th> </th>` を利用して**ヘッダー**も追加しましょう。
 
-- If you look at the end of the styles.css file, you will see the CSS code that describes how the table should look. You don't have to understand all of it! But you can experiment with changing the text, border and background colours to design your own style.
+- style.css の最後を見ると、CSSコードでテーブルの見た目をどのように変えることができるのかを見ることが出来ます。いきなり全てを理解する必要はありません! もし、内容を変更して変更する時間があれば、線\(boder\)と、背景色\(background colors\)を自分の好きなものにしましょう。
   ```css
-    table, th, td {
-      border: 1px solid HoneyDew;
-      border-collapse: collapse;
-    }
-    tr {
-      background-color: PaleTurquoise;
-    }
-    th, td {
-      vertical-align: top;
-      padding: 5px;
-      text-align: left;
-    }
-    th {
-      color: purple;
-    }
-    td {
-      color: purple;
-    }
+  table, th, td {
+    border: 1px solid HoneyDew;
+    border-collapse: collapse;
+  }
+  tr {
+    background-color: PaleTurquoise;
+  }
+  th, td {
+    vertical-align: top;
+    padding: 5px;
+    text-align: left;
+  }
+  th {
+    color: purple;
+  }
+  td {
+    color: purple;
+  }
   ```
 
-- Notice how some of the selectors use **commas**, for example `table, th, td`? This is a _list of selectors_: it means it applies to _all_ `<th>` elements _and all_ `<td>` elements. It saves typing out the same set of rules again for each selector!
+- 補足として、`table, th, td` のようなセレクタ中の カンマ \(`,`\) について説明します。これは、セレクタのリストです。意味としては、全ての `<th>` 要素と、全ての `<td>` 要素に対して適用されるという意味です。これにより、同じルールをそれぞれのセレクタに書く必要がなくなります。
+
+
+
