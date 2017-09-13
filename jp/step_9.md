@@ -1,17 +1,19 @@
-## Making a menu
+## ウェブサイトをナビゲートしよう
 
-- Many websites have a **navigation** menu to make it easy to get around the pages. Now that you've got a bunch of pages, a homepage, and links to get around, let's move the links to a navigation section at the top.
+- たくさんのウェブサイトに、簡単にページ間を行ったり来たり出来るようにナビゲーションメニューがあります。では、トップページと中のページ が出来て、行き来できるリンクがはれたら、それらのリンクをセクションのトップにあるナビゲーション部分に動かしましょう。　
 
-- Just before the opening `<ul>` tag, press enter to create a new blank line, then on the new line type the following tag: `<nav>`. Trinket automatically adds in the closing tag for you, you can delete that for now.
+- &lt;ul&gt;タグの直前でEnterキーを押して、空の行を作り、その行に&lt;nav&gt;タグを打ち込みます。 トリンケットが自動的に閉じタグをつけてくれます。
 
-- Just _after_ the _closing_ `</ul>` tag, press enter to go onto a new line, and type in the closing tag `</nav>`. 
-   "nav" stands for **navigation**. The `nav` section is a set of tools for getting around a website.
+- 今は自動的に入った終了タグを削除して、終了タグ&lt;/ ul&gt;の直後でEnterキーを押して新しい行に移動し、終了タグ&lt;/ nav&gt;を入力します。
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　 ・「nav」はナビゲーションを表します。 navセクションは、ウェブサイトを行き来するための場所です。
 
-- Now, select your entire `nav` section and list by clicking just before the opening `<nav>` tag and dragging the mouse all the way until just after the closing `</nav>` tag, so that all of the text including the opening and closing tags becomes highlighted. Make sure all of the **angle brackets** `<` and `>` at the start and end are highlighted too! ![](images/SelectTextYayWhoops.png)
+- 今度は、&lt;nav&gt;タグの直前をクリックし、&lt;/ nav&gt;タグの直後までマウスをドラッグすると、開始タグと終了タグを含むすべてのテキストが選択されます。開始と終了の山カッコ（&lt;と&gt;）がすべて選択されていることを確認してください！
+  ![](images/SelectTextYayWhoops.png)
 
-- You are going to **cut** this time instead of **copy**. Press and hold the **Ctrl** \(or **cmd**\) key and while holding it press the **X** key. The code will disappear but don't panic!
+- 今回はコピーする代わりにカット（切り取り）をします。 Ctrl（またはcmd）キーを押したままにして、Xキーを押します。コードは消えますが、パニックにならなくても大丈夫！
 
-- At the top of the file, click in the space between the `<header> </header>` tags. Make sure you see the cursor flashing there. Now **paste** in the code by pressing **Ctrl** \(or **cmd**\) and **V** together as usual. Click Run to see your changes! The code should look something like this:
+- ファイルの上部にある&lt;header&gt; &lt;/ header&gt;タグの間をクリックします。カーソルが点滅していることを確認してください。 そのままCtrlキー（またはcmd）とVキーを同時に押してコードを貼り付けます。変更を確認するために\[実行\]をクリックしてください。コードは次のようになっているはずです。
+
    ```html
    <header>
       <nav>
@@ -25,34 +27,37 @@
    </header>
    ```
 
-   If you make a mistake, you can **undo** it by pressing **Ctrl** \(or **cmd**\) and **Z** together. You can usually press it a few times to undo the last couple of changes. This is another handy shortcut that you can use in many programs!
+   ・もし失敗していたら、Ctrlキー（またはcmd）とZキーを同時に押して前の状態に戻すことができます。何度か押し続けると最後にした作業から何度か前に戻すことができます。この方法は、他にもたくさんのプログラムで使える便利なショートカットです。
 
-- To make the navigation menu appear at the top of every page on your website, you put the same code into each new file that you created. Select the entire `nav` section like you did before, and press the **Ctrl** \(or **cmd**\) and **C** keys together to **copy** it. Then, in each of your other files, click inside the `<header> </header>` section and **paste** the code exactly like you did in Step 6.
+- 自分のウェブサイトの全てのページ上部にナビゲーションメニューを表示させるために、新しく作った各ページのページ上部に同じコードを入れましょう。 `nav` セクション丸ごとを、先ほどのように選択して、Ctrlキー（またはcmd）とCキーを同時に押してコピーします。そして、他のファイル（ページ）の中の&lt;header&gt; &lt;/ header&gt;タグの間をクリックし、ちょうどステップ６でしたように、コードを貼り付けます。
 
-- Now when you click Run, you will be able to click the links no matter which page you are on. Remember to  click Save when you're done!
+- これで、\[実行\]をクリックすると、どのページにいたとしても、リンクをクリックすることができます。完了したら\[保存\]をクリックすることを忘れないでください！
 
-- By adding more **CSS** rules in the stylesheet, you can transform your navigation menu into a cool looking menu bar! 
+- スタイルシートに**CSS**ルールを追加することで、ナビゲーションメニューをクールなデザインのメニューバーに変えることができます！
 
-- Go to the stylesheet file. Remember it is in the styles.css tab. Click _after_ a closing curly brace `}` and press enter to go onto a new line. Add the following rule.
+- スタイルシートファイルに移動します。これは「styles.css」タブにあります。閉じるほうの中かっこ`}`のすぐ後をクリックして からEnterキーを押すと、新しい行に移動します。次のルールを追加します。
    ```css
       nav ul {
          background-color: tomato;
       }
    ```
 
-- Notice how you used **two selectors** instead of one? If you used the `ul` selector on its own, the rule would affect _all_ unordered lists on your website. Adding the `nav` selector as well makes it only apply to lists that are in between `nav` tags.
+- 1つではなく**2つのセレクタ**を使ったことに気づきましたか？ `ul`セレクターだけを指定すると、そのルールはWebサイトの「すべての順序無しリスト\(ul\)」に影響します。 `nav`セレクタをあわせて指定すると、「`nav`タグにはさまれた部分にあるリスト\(ul\)」にのみ適用されます。
 
-- Click Run to see what it looks like. 
+- どんな表示になるか「Click to Run」を押して確認します。 
 
-- Let's get rid of the bullet points. These are the spots in front of each list item. Go to the styles.css tab and add the following to the file. Again, type it on a new line after a `}` so it's not accidentally inside any other block of rules.
+- 中点\(・\)を消しましょう。\(各リスト項目の前にある点のことです。\) `styles.css`タブに移動して、こちらのコードを追加します。追加したら、もう一度`｝`の後に改行しておきましょう。そうすると、まちがって他のルールのところに書いてしまうことがなくなります。
+
    ```css
    nav ul li {
       list-style-type: none;
    }
    ```
-    Notice this set of rules has _three_ selectors! It selects all `li` elements that are in a `ul` list which is inside a `nav` section. Phew!
 
-- Now let's make the list horizontal (across) instead of vertical (down). Inside the new set of rules, add the following line: `display: inline;` Let's also add the properties `margin-right` and `margin-left` to space the menu items out a bit. The rules should look like this now:
+   このルールには**3つのセレクタ**があることに注意してください！`nav`セクション内にある`ul`リスト内にあるすべての`li`要素を選択します。ふう～！
+
+- では、リストを垂直（上下）方向の並びではなく、水平（左右）方向の並び順にしましょう。新しい行を追加します。`display：inline;`と、`margin-right`と`margin-left`プロパティを追加して、メニュー項目のスペースを少し空けてみましょう。ルールは次のようになります。
+
    ```css
    nav ul li {
       list-style-type: none;
@@ -61,15 +66,17 @@
       margin-left: 10px;
    }
    ```
-   Remember `10px` means 10 **pixels**.
 
-- How about making the menu change to to tell you which page you are on? This part won't be in the stylesheet.
+   `10px`は 10 **ピクセル**を表します。
 
-- Let's start with the homepage. Go to the index.html file. In the list, remove the link tags before and after the word "Home", so that the list item for the homepage is just text in between `<li> </li>` tags, like this: `<li>Home</li>`.
+- どのページを表示しているのか分かるようにメニューを変えてみませんか？　これはスタイルシートには書きません。
 
-- Now go to each of your other files, and do the same thing, each time removing the link tags for the page you are editing. So on the music.html file, remove the link tags in the "Music" list item, and so on. ![](images/MenuPageLinkRemoved2.png)
+- 「home」ページから変えていきましょう。 `index.html`ファイルに移動します。リストの中で、「Home」ページのリスト項目が`<li> </ li>`タグの間で、ただのテキストになるように、 "Home"という単語の前後にあるリンクタグを削除します。こんなように。`<li> Home </ li>`
 
-- Click Run and explore your pages. See how the menu bar shows the page you're on as plain text instead of a link?
+- 他のファイルにも移動して、同じことをしていきます。編集するページそれぞれのリストについて、リンクタグを削除します。たとえば、`music.html`ファイルでは`"Music"`のリスト項目のリンクタグを削除します。
+  ![](images/MenuPageLinkRemoved2.png)
+
+- 「Click To Run」を押して、ページを確認しましょう。. メニューバーでいまどこのページにいるかを表すために、リンクの代わりにプレーンテキストになっていることがわかるでしょう。
 
 
 
