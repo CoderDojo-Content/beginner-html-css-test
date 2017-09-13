@@ -1,6 +1,7 @@
 ## Making a list
 
-- When writing a list, wouldn't it be nice if the text looked more like a proper list? Well, there are html tags that do just that! Go back to the tab named index.html and change the paragraph code so that it looks like this: 
+- When writing a list, wouldn't it be nice if the text looked more like a proper list? Well, there are html tags that do just that! Go back to the tab named index.html and change the paragraph code so that it looks like this:
+
 ```html
 <p>
     My website is about Ireland. It is going to have the following pages:
