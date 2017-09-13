@@ -1,75 +1,45 @@
-## Making a menu
+## Creating links
 
-- Many websites have a **navigation** menu to make it easy to get around the pages. Now that you've got a bunch of pages, a homepage, and links to get around, let's move the links to a navigation section at the top.
+- To turn some text into a link, you put it in between `<a> </a>` tags. It looks like this: 
 
-- Just before the opening `<ul>` tag, press enter to create a new blank line, then on the new line type the following tag: `<nav>`. Trinket automatically adds in the closing tag for you, you can delete that for now.
+    ```html
+    <a href="attractions.html">Attractions</a>
+    ```
 
-- Just _after_ the _closing_ `</ul>` tag, press enter to go onto a new line, and type in the closing tag `</nav>`. 
-   "nav" stands for **navigation**. The `nav` section is a set of tools for getting around a website.
+  The **href** attribute tells the browser the address of the page to link to. As with all attributes, the value you give it must go inside quotation marks.
 
-- Now, select your entire `nav` section and list by clicking just before the opening `<nav>` tag and dragging the mouse all the way until just after the closing `</nav>` tag, so that all of the text including the opening and closing tags becomes highlighted. Make sure all of the **angle brackets** `<` and `>` at the start and end are highlighted too! ![](images/SelectTextYayWhoops.png)
+- Go to the index.html file and add the tags to each item on your list of pages, so that it looks like this. Change the text inside the quotation marks so that it exactly matches the names of your new files that you created! Add in a list item with a link for the Homepage as well.
 
-- You are going to **cut** this time instead of **copy**. Press and hold the **Ctrl** \(or **cmd**\) key and while holding it press the **X** key. The code will disappear but don't panic!
-
-- At the top of the file, click in the space between the `<header> </header>` tags. Make sure you see the cursor flashing there. Now **paste** in the code by pressing **Ctrl** \(or **cmd**\) and **V** together as usual. Click Run to see your changes! The code should look something like this:
    ```html
-   <header>
-      <nav>
-         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="attractions.html">Attractions</a></li>
-            <li><a href="music.html">Music</a></li>
-            <li><a href="food.html">Food</a></li>
-         </ul>
-      </nav>
-   </header>
+   <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="attractions.html">Attractions</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="food.html">Food</a></li>
+   </ul>
    ```
 
-   If you make a mistake, you can **undo** it by pressing **Ctrl** \(or **cmd**\) and **Z** together. You can usually press it a few times to undo the last couple of changes. This is another handy shortcut that you can use in many programs!
+- Now you can navigate to your new pages! Click Save and then click Run to see your links and try them out.
 
-- To make the navigation menu appear at the top of every page on your website, you put the same code into each new file that you created. Select the entire `nav` section like you did before, and press the **Ctrl** \(or **cmd**\) and **C** keys together to **copy** it. Then, in each of your other files, click inside the `<header> </header>` section and **paste** the code exactly like you did in Step 6.
+- Links to other websites look the same. Type in the code for another set of link tags on your page, leaving the **href** value blank for now. 
+    ```html
+    <p>
+        <a href="">Visit the Irish Tourism website</a> to learn more about Ireland!
+    </p>
+    ```
 
-- Now when you click Run, you will be able to click the links no matter which page you are on. Remember to  click Save when you're done!
+- Go to a website that you want to link to. Click in the address bar and select all of the text. That's the whole address of the page you're on. Press the **Ctrl** \(or **cmd**\) and **C** keys together to **copy** it. 
 
-- By adding more **CSS** rules in the stylesheet, you can transform your navigation menu into a cool looking menu bar! 
+    ![URL in address bar](images/AddressBarURL.png)
 
-- Go to the stylesheet file. Remember it is in the styles.css tab. Click _after_ a closing curly brace `}` and press enter to go onto a new line. Add the following rule.
-   ```css
-      nav ul {
-         background-color: tomato;
-      }
-   ```
+- Now go back to your code. Click in between the quotation marks \(make sure you see the cursor flashing there\) and **paste** in the address by pressing **Ctrl** \(or **cmd**\) and **V** together. Click Run to try out the link! 
 
-- Notice how you used **two selectors** instead of one? If you used the `ul` selector on its own, the rule would affect _all_ unordered lists on your website. Adding the `nav` selector as well makes it only apply to lists that are in between `nav` tags.
+    ![Link tag](images/LinkTagWithURL.png)
 
-- Click Run to see what it looks like. 
+- Just like the other text, you can make links be any colour you like in the stylesheet. Go to the styles.css file and add the following set of rules. Notice the selector for links is `a`. Choose any colour you want! Make it a different colour to the other text colours you have used. To see your changes, click Run.
 
-- Let's get rid of the bullet points. These are the spots in front of each list item. Go to the styles.css tab and add the following to the file. Again, type it on a new line after a `}` so it's not accidentally inside any other block of rules.
-   ```css
-   nav ul li {
-      list-style-type: none;
-   }
-   ```
-    Notice this set of rules has _three_ selectors! It selects all `li` elements that are in a `ul` list which is inside a `nav` section. Phew!
-
-- Now let's make the list horizontal (across) instead of vertical (down). Inside the new set of rules, add the following line: `display: inline;` Let's also add the properties `margin-right` and `margin-left` to space the menu items out a bit. The rules should look like this now:
-   ```css
-   nav ul li {
-      list-style-type: none;
-      display: inline;
-      margin-right: 10px;
-      margin-left: 10px;
-   }
-   ```
-   Remember `10px` means 10 **pixels**.
-
-- How about making the menu change to to tell you which page you are on? This part won't be in the stylesheet.
-
-- Let's start with the homepage. Go to the index.html file. In the list, remove the link tags before and after the word "Home", so that the list item for the homepage is just text in between `<li> </li>` tags, like this: `<li>Home</li>`.
-
-- Now go to each of your other files, and do the same thing, each time removing the link tags for the page you are editing. So on the music.html file, remove the link tags in the "Music" list item, and so on. ![](images/MenuPageLinkRemoved2.png)
-
-- Click Run and explore your pages. See how the menu bar shows the page you're on as plain text instead of a link?
-
-
-
+    ```css
+    a {
+        color: Brown;
+    }
+    ```

@@ -1,45 +1,26 @@
-## Creating links
+- So you've decided what pages you'd like to have in your website, now let's make them! To create a new web page, you create a new file with a name that ends in **.html**. At the top of the code panel, click on the **+** symbol next to the tabs. This will create a new file. Give it a name. Remember, it must end in **.html** \(including the dot!\) so that the browser knows it's a web page.
 
-- To turn some text into a link, you put it in between `<a> </a>` tags. It looks like this: 
+If you want to change the name of a file, click on the cog icon to the right of the filename, and click the pencil. Type in the new name and press Enter. You can also delete a file by clicking the bin icon instead of the pencil.
+  ![](images/EditFilename.png)
 
-    ```html
-    <a href="attractions.html">Attractions</a>
-    ```
+- You might be wondering why you can't change the name of the index.html file. "index.html" is a special name used for the **homepage** of a website. That's the first page you land on when you visit a website. When you go to a website's homepage, the browser looks for the file called "index.html" and displays it on your screen.
 
-  The **href** attribute tells the browser the address of the page to link to. As with all attributes, the value you give it must go inside quotation marks.
+- Go the the file blank\_page.html in the code panel \(by clicking on the tab with that name\). Select all of the text in the file by doing the following: Click anywhere inside the code panel, then press and hold the **Ctrl** key \(or if you are using a Mac, the **cmd** key\) and while holding it, press the **A** key at the same time. Notice how all the text becomes highlighted.
+  ![](images/SelectAll.png)
 
-- Go to the index.html file and add the tags to each item on your list of pages, so that it looks like this. Change the text inside the quotation marks so that it exactly matches the names of your new files that you created! Add in a list item with a link for the Homepage as well.
+- Now, with the text selected, press and hold the **Ctrl** \(or **cmd**\) key again and then while holding it press the **C** key. This **copies** everything that was selected.
 
-   ```html
-   <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="attractions.html">Attractions</a></li>
-      <li><a href="music.html">Music</a></li>
-      <li><a href="food.html">Food</a></li>
-   </ul>
-   ```
+- Go to your new file and click inside the code panel \(which is blank at the moment\). Press and hold the **Ctrl** \(or **cmd**\) key and then while holding it, press the **V** key. This **pastes** everything that was copied into your new page.
 
-- Now you can navigate to your new pages! Click Save and then click Run to see your links and try them out.
+  You can use these keyboard shortcuts in most programs to **copy** and **paste** stuff, including text and files!
 
-- Links to other websites look the same. Type in the code for another set of link tags on your page, leaving the **href** value blank for now. 
-    ```html
-    <p>
-        <a href="">Visit the Irish Tourism website</a> to learn more about Ireland!
-    </p>
-    ```
+- Change the text in between the `<title> </title>` tags so your new page has a descriptive title.
 
-- Go to a website that you want to link to. Click in the address bar and select all of the text. That's the whole address of the page you're on. Press the **Ctrl** \(or **cmd**\) and **C** keys together to **copy** it. 
+- In between the `<main> </main>` tags in the new file, use the tags you have learned to add stuff to the page, such as paragraphs, headings, images and lists!
 
-    ![URL in address bar](images/AddressBarURL.png)
+- Repeat the steps above for each new page that you want to add. 
 
-- Now go back to your code. Click in between the quotation marks \(make sure you see the cursor flashing there\) and **paste** in the address by pressing **Ctrl** \(or **cmd**\) and **V** together. Click Run to try out the link! 
+- When there are too many tabs to be able to see them all, you can use the **<** and **>** icons in the top left corner of the tabs to scroll between them.
 
-    ![Link tag](images/LinkTagWithURL.png)
 
-- Just like the other text, you can make links be any colour you like in the stylesheet. Go to the styles.css file and add the following set of rules. Notice the selector for links is `a`. Choose any colour you want! Make it a different colour to the other text colours you have used. To see your changes, click Run.
 
-    ```css
-    a {
-        color: Brown;
-    }
-    ```
