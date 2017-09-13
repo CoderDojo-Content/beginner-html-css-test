@@ -1,28 +1,25 @@
-## Making a list
+## リストをつくってみよう
 
-- When writing a list, wouldn't it be nice if the text looked more like a proper list? Well, there are html tags that do just that! Go back to the tab named index.html and change the paragraph code so that it looks like this:
-
-    ```html
+- リストを書くときに、文字がリストのように見えるといいですね。リストを書くための htmlタグがあります！ index.htmlという名前のタブに戻り、`<p>`要素の部分を次のように変更します: 
+   ```html
     <p>
-        My website is about Ireland. It is going to have the following pages:
+       My website is about Ireland. It is going to have the following pages:
     </p>
     <ul>
-        <li>Attractions</li>
-        <li>Music</li>
-        <li>Food</li>
+       <li>Attractions</li>
+       <li>Music</li>
+       <li>Food</li>
     </ul>
-    ```
+   ```
 
+- 「Click To Run」をクリックして、どんなリストになったか見てみましょう。
+  ![](images/ulist.png)
 
-- Click Run. See how the text got put into a nice list? 
+- `<ul> </ul>`タグはリスト全体をかこみます。`ul`タグの中に、一つ一つのリスト項目を`<li> </li>`タグを使って書きましょう。 `"ul"`は文字の前に「・」がつく箇条書きのリスト（番号のつかないリスト）になります。`"li"`はそれぞれの**リスト項目**になります。これで見た目がととのったリストになります。
 
-  ![Unordered list](images/UnorderedList.png)
+  リスト項目を、ウェブサイトのページ名に変更します。あなたがすきなページ大丈夫です。日本語のページでも他の国の言葉のページでかまいません！
 
-- The `<ul> </ul>` tags go around the whole list, and they turn it into the nice looking list you now have. "ul" stands for **unordered list**. This means a list with no numbers. Each thing in the list must be in between `<li> </li>` tags. "li" stands for **list item**. 
-
-    Change the text in the list items to some pages that you would like to have in your website. Your website can be about anything you want, it doesn't have to be about your home country!
-
-- How about if you wanted a numbered list? It's almost the same, but instead of `ul`, you use `ol`, which stands for **ordered list**. Add the following code after the last `</p>` tag in the file:
+- 番号がついたリストをつくってみませんか？ほとんど同じですが、`ul`の代わりに`ol`を使います。これは番号付きリストをです。index.htmlファイルの最後に`<p>`タグと次のコードを追加します。
    ```html
    <p>
       These are the things I have learned to use in my website so far:
@@ -34,9 +31,9 @@
       <li>Lists!</li>
    </ol>
    ```
-- Click Run. Here's what it should look like now 
 
-    ![Ordered list](images/OrderedList.png)
+- 「Click To Run」をクリックすると、このようにみえるはずです。
+  ![](images/olist.png)
 
 
 
