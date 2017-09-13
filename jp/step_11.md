@@ -1,25 +1,21 @@
-## Adding a map or vide
+## マップとビデオの追加
 
-- Bonus: add a video! YouTube provides an easy way to **embed** \(put\) videos from it onto your website. Find a video on YouTube that you want to show on your website. 
+- ボーナス: ビデオを追加しましょう。YouTubeは、ウェブサイトに動画を**埋め込む \(embed\) **ための簡単な方法を用意しています。あなたのサイトに埋め込みたいビデオを探しましょう。
 
-- Look for the "Share" button and click it. Select the option "Embed".
+- "共有" ボタンボタンをクリックして、"埋め込みコード" を選びます。
 
-- You will see a text box with all the text selected \(if you accidentally unselect the text, you can select it all again by clicking on it and pressing the **Ctrl** \(or **cmd**\) and **A** keys together on your keyboard, just like before\). Press the **Ctrl** \(or **cmd**\) and **C** keys together on your keyboard to **copy** the text.
-
+- 選択済みのテキストボックスを見ることが出来ます。\(もし、テキストが選択されていなければ、テキストエリアをクリックして **Ctrl** \(もしくは **cmd**\) を押しながら、**A** キーを事前に押してください。\) そして、**Ctrl** \(もしくは **cmd**\) を **C**キーと一緒に押します。クリップボードにテキストがコピーされます。
   ![](images/EmbedYouTube.png)
 
-- Then go to your code, and click in the place where you want to put the video, for example after a heading or paragraph. Paste the code by pressing **Ctrl** \(or **cmd**\) and **V** on your keyboard at the same time, as usual. Don't worry about understanding all the code you just pasted! 
-
+- HTMLコードに戻ります。そして、ビデオを挿入したい場所をクリックします。例えば、見出しや段落の後などです。**Ctrl** \(もしくは **cmd**\) と **V** キーを一緒に押して、テキストをペーストしてください。今回、ペーストしたコードの中身については理解する必要はありません!
   ![](images/EmbedYouTube2.png)
 
-- Click Run to see the video appear on your web page.
+- Run をクリックして、ビデオが表示されているかを確認しましょう。
 
-- The same technique works for Google maps as well. Give it a go! Go to [dojo.soy/google-maps](http://dojo.soy/google-maps) and search for a place you want to show on your website. Click on the result, then find the Share button and get the code and add it to your website as above. 
-
+- 同じようなテクニックをGoogle Mapでも利用することができます。やってみましょう。[dojo.soy/google-maps](maps.google.com)  に行き、ウェブサイトで表示したい場所を探します。そして、共有ボタンを押してコードを手に入れてあなたのウェブサイトに同じように埋め込みます。 
   ![](images/EmbedGoogleMap.png)
 
-- If you look carefully you should be able to find `width` and `height` attributes in the pasted code. You can change the values to make the map appear bigger or smaller.
-
+- よくみると貼り付けたタグの中に`width` と `height` 属性を見るけることが出来ます。 この値を変更することで、マップを大きくしたり小さくしたりすることができます。
   ![](images/EmbeddedGoogleMapCode.png)
 
 

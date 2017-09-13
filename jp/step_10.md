@@ -43,7 +43,7 @@
    `border-radius` プロパティは、とても簡単にカドをカッコよくすることができます! さらに、このルールを画像にも適用することができます。img セレクタに、`border-radius` ルールを追加してください 
 
 - 以下は、今回のスタイルシートとウェブページがどのように見えるかの例になります。 
-  ![](assets/MenuBarFullStyles.png)
+  ![](images/MenuBarFullStyles.png)
 
 
 
