@@ -6,8 +6,7 @@
     ```html
     <img src="tito.png" alt="Tito the dog" width="100px" />
     ```
-
-
+    Here's what it should look like
    ![Picture of Tito](images/ImgTito2.png)
 
 - Notice that the `<img>` tag is different from the other tags you've used so far: 
@@ -17,6 +16,7 @@
    The tag contains three extra pieces of information inside it called **attributes**. The `src` attribute tells the browser what file to use for the picture. The `alt` attribute is a short description that the browser will show if it cannot display the picture. 
 
 - What do you think the `width` attribute does? 
+
 --- hints ---
 
 --- hint ---
