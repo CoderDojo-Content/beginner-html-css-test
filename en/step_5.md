@@ -13,9 +13,10 @@
     </ul>
     ```
 
+
 - Click Run. See how the text got put into a nice list? 
 
-![Unordered list](images/UnorderedList.png)
+  ![Unordered list](images/UnorderedList.png)
 
 - The `<ul> </ul>` tags go around the whole list, and they turn it into the nice looking list you now have. "ul" stands for **unordered list**. This means a list with no numbers. Each thing in the list must be in between `<li> </li>` tags. "li" stands for **list item**. 
 
@@ -34,6 +35,7 @@
       <li>Lists!</li>
    </ol>
    ```
+
 
 - Click Run. Here's what it should look like now 
 
