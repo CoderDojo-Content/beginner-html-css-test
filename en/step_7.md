@@ -1,11 +1,12 @@
 ## Creating links
 
 - To turn some text into a link, you put it in between `<a> </a>` tags. It looks like this: 
+
     ```html
     <a href="attractions.html">Attractions</a>
     ```
 
- The **href** attribute tells the browser the address of the page to link to. As with all attributes, the value you give it must go inside quotation marks.
+  The **href** attribute tells the browser the address of the page to link to. As with all attributes, the value you give it must go inside quotation marks.
 
 - Go to the index.html file and add the tags to each item on your list of pages, so that it looks like this. Change the text inside the quotation marks so that it exactly matches the names of your new files that you created! Add in a list item with a link for the Homepage as well.
 
