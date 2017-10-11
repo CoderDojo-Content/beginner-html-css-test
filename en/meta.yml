@@ -8,7 +8,7 @@ ingredient: false
 copyedit: false
 curriculum: creator, design-0, programming-0, phys-comp-0, manufacture-0, community-0
 interests: "animals, jokes/pranks, space, photography, music/sound, physical computing, games, robots, geography"
-technologies: "html/css, scratch"
+technologies: "html/css"
 site_areas:
 steps:
   - title: Introduction
