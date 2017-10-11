@@ -69,17 +69,5 @@ Notice this set of rules has _three_ selectors! It selects all `li` elements tha
 - Let's start with the homepage. Go to the index.html file. In the list, remove the link tags before and after the word "Home", so that the list item for the homepage is just text in between `<li> </li>` tags, like this: `<li>Home</li>`.
 
 - Now go to each of your other files, and do the same thing, each time removing the link tags for the page you are editing. So on the music.html file, remove the link tags in the "Music" list item, and so on.
-    ```html
-	  <header>
-	    <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="attractions.html">Attractions</a></li>
-          <li>Music</li>
-          <li><a href="food.html">Food</a></li>
-        </ul>
-      </nav>
-	  </header>
-    ```
 
 - Click Run and explore your pages. See how the menu bar shows the page you're on as plain text instead of a link? ![](assets/egMenuBarOnPage.png)

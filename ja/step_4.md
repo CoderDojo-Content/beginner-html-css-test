@@ -12,7 +12,7 @@
 
 - なみかっこ（カーリーブレイス） `{ }` の間のテキストは ウェブサイトの**見た目を決めるもの**です。body は、ウェブサイトの中の&lt;body&gt; 要素（タグ）にその見た目を設定するという意味です。なみかっこの外側の部分を**セレクタ**と呼びます。2のテキストは、**body**要素が**セレクタ**になります。
 
-- `background-color` の横の `white` を `LightSkyBlue`に変更し、 「Click To Run」をクリックします。 \(「Click To Run」は、クリックして実行するというボタンです。覚えておきましょう。\) ウェブサイトが青い背景になるはずです！
+- `background-color` の横の `white` を `LightSkyBlue`に変更し、 「Click To Run」をクリックします。 \(「Click To Run」は、クリックして実行するというボタンです。覚えておきましょう。\) ウェブサイトが青い背景になるはずです！ ![](images/egFirstCSSbluebg.png)
 
 - どうしてこうなるのかな？コードパネルのタブで index.html をクリックして、 次のテキストの部分を探してみましょう。
    `<link type="text/css" rel="stylesheet" href="styles.css"/>` この部分は、ブラウザに styles.css という名前のファイルを探すように指示しています。このファイルは、**スタイルシート**と呼びます。スタイルシートファイルは、ファイル名の最後に**.css**と書かれています。スタイルシートには、ページ上の各要素のCSSの決まりが書かれています。
@@ -39,7 +39,7 @@
    ```
 
  「Click To Run」をクリックします。見出しむらさき色からオレンジ色になるはずです。
-  ![](images/StyleColorsFonts.png)
+  ![](images/egCssColorsFonts.png)
 
 - 文字の色と同じように、文字の形（フォント）も変わりました。これは、`font-family`を変更したからです。
 
