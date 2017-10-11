@@ -2,7 +2,7 @@
 
 - In the left-hand panel, the **code panel**, click on the tab that says "index.html".
 
-- Find the line that says "Welcome to Ireland!" and change it to your own home country or town, being careful not to delete the text `<p>` at the start of the line and `</p>` at the end of the line. Then click on the button that says "Click To Run". This is the Run button. You will see your web page updated in the right-hand panel. ![](assets/egFirstHtmlCodeRun.png)
+- Find the line that says "Welcome to Ireland!" and change it to your own home country or town, being careful not to delete the text `<p>` at the start of the line and `</p>` at the end of the line. Then click on the button that says "Click To Run". This is the Run button. You will see your web page updated in the right-hand panel. ![](images/egFirstHtmlCodeRun.png)
 
 - Now on the same line, change the `<p>` and `</p>` to `<h1>` and `</h1>`, and click Run. What happens?
   ```html
